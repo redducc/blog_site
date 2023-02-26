@@ -1,4 +1,88 @@
 baseURL: http://example.org/
 languageCode: en-us
 title: sushmit's blogs
-theme: ananke
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "I Am Sushmit Singh Rathore"
+    subtitle: "Doing random stuffs"
+    imageUrl: "https://avatars.githubusercontent.com/u/80753594?s=400&u=b75ae368292852ca8476572ebe9d32d1343fb455&v=4"
+    imageWidth: 220
+    imageHeight: 220
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false 
+    hiddenInSingle: false 
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:sushmit718@gmail.com"
+    - name: "instagram"
+      url: "https://www.instagram.com/sushmit7821/"
+    - name: "github"
+      url: "https://github.com/redducc"
+    - name: "telegram"
+      url: "https://t.me/redducc"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
