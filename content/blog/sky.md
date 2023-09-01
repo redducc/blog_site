@@ -32,7 +32,7 @@ weight: 999999
 - If your device isn’t already in fastboot mode, on the computer, open a command prompt (on Windows) or terminal (on Linux or macOS) window, and type: **adb reboot bootloader** You can also boot into fastboot>- Flash boot image:
     **fastboot flash recovery twrp-3.7.0_12-0_LOCAL-20230826-04-sky.img**
 
-# Installing from recovery
+# Installing from recovery [Method 1]
 
 1. Boot into recovery using:
     **fastboot reboot recovery**
@@ -41,6 +41,13 @@ weight: 999999
 4. Type the following command in your terminal:
     **adb sideload aospa-topaz-unofficial-sky-20230901.zip**
 5. After installation complete, Reboot to system.
+
+#Installing from recovery [Method 2]
+
+1. Move the ROM zip file to your phone's internal storage.
+2. In TWRP, select "Install" and navigate to the location of the ROM zip. Swipe to install.
+3. After installation, perform a factory reset: Wipe -> Format Data -> Yes. (Type)
+4. After installation complete, Reboot to system.
 
 # That's all folks
 After you’ve double checked that you followed the steps precisely, didn’t skip any and still have questions or got stuck, feel free to ask on our [`Telegram group`](https://t.me/stayparanoid_sky).
