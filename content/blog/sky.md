@@ -42,7 +42,7 @@ weight: 999999
     **adb sideload aospa-topaz-unofficial-sky-20230901.zip**
 5. After installation complete, Reboot to system.
 
-#Installing from recovery [Method 2]
+# Installing from recovery [Method 2]
 
 1. Move the ROM zip file to your phone's internal storage.
 2. In TWRP, select "Install" and navigate to the location of the ROM zip. Swipe to install.
